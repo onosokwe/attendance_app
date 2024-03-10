@@ -23,10 +23,12 @@ const AuthGuard = ({ children, ...rest }) => {
             .catch((err1) => {
                 console.log(err1.response.data.error);
             });
-    }else {
-        history.push("/");
-   }
+        }else {
+            history.push("/");
+      }
     }, [token, history]);
+
+    console.log(profile)
 
   return (
     <Route

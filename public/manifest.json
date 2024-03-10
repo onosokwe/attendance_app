@@ -1,7 +1,7 @@
 {
   "short_name": "KLOKA",
-  "name": "Kloka - Kimberly Ryan ERP Solution Application",
-  "description": "Kloka - Kimberly Ryan ERP Solution",
+  "name": "Kloka - Clock In Application",
+  "description": "Kloka - Kimberly Ryan Clock In Application",
   "icons": [
     {
       "src": "favicon.ico",

@@ -18,16 +18,8 @@ import Login from "./pages/auth/Login";
 import ForgotPassword from "./pages/auth/ForgotPassword";
 import PasswordReset from "./pages/auth/ResetPassword";
 
-// dashboard
-import Dashboard from "./pages/dashboard/Dashboard";
-
 // attendance
-import Attendances from "./pages/attendance/Attendances";
-import AttendanceReport from "./pages/attendance/AttendanceReport";
 import ClockIn from "./pages/attendance/ClockIn";
-import AllAttendanceRecords from "./pages/attendance/AllAttendanceRecords";
-
-
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -76,13 +68,7 @@ function App() {
                                     toggleDarkTheme={toggleDarkTheme}
                                     clicked={clicked}
                                 >
-                                    <AuthGuard path="/dashboard"><Dashboard  /></AuthGuard>
-
-                                    <AuthGuard path="/attendance/records"><Attendances /></AuthGuard>
-                                    <AuthGuard path="/attendance/report"><AttendanceReport /></AuthGuard>
-                                    <AuthGuard path="/attendance/clockin"><ClockIn /></AuthGuard>
-                                    <AuthGuard path="/attendance/all"><AllAttendanceRecords /></AuthGuard>
-                                    
+                                    <AuthGuard path="/dashboard"><ClockIn  /></AuthGuard>
                                 </Layout>
                             </>
                         </Switch>

@@ -171,6 +171,8 @@ const ClockIn = () => {
         }
     },[TOKEN, history]);
 
+    console.log(profile)
+
     useEffect(() => {
         getMyLastClockin().then((res) => {
             setLastClockin(res.data?.data?._id);
@@ -338,7 +340,7 @@ const ClockIn = () => {
           <Grid item>
             <div className={classes.flex}>
               <Typography className={classes.title}>
-                Your Location
+                Hello {profile && profile.first_name ? profile.first_name : null}
               </Typography>
               {/* <Typography className={classes.title}>
                 {exact ? exact : "Finding your location"}
