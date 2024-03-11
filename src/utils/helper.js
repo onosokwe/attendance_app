@@ -1,7 +1,8 @@
 import axios from "axios";
 import instance from "./instance";
 
-const baseURL = "https://kloka-api-b0c0cc5775ef.herokuapp.com/api";
+const baseURL = "";
+
 
 const getLoggedInUser = async (token) => {
   const response = await axios.get(

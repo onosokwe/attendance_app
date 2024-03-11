@@ -3,7 +3,7 @@ import axios from "axios";
 const TOKEN = localStorage.getItem("kloka:token:data");
 
 const instance = axios.create({
-    baseURL: "https://kloka-api-b0c0cc5775ef.herokuapp.com/api",
+    baseURL: "",
     headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${TOKEN}`,
