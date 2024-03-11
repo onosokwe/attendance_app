@@ -32,3 +32,5 @@ export const truncateString = (str, len) => {
   }
 };
 
+
+
